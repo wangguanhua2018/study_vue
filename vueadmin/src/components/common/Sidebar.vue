@@ -47,6 +47,10 @@
                             {
                                 index: 'content',
                                 title: '发布文章'
+                            },
+                            {
+                                index: 'tag',
+                                title: '文章标签'
                             }
                         ]
                     },

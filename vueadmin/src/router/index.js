@@ -43,6 +43,12 @@ export default new Router({
                     component: resolve => require(['../components/page/Content.vue'], resolve),
                     meta: { title: '发布文章'}
                 },
+                {
+                    // 文章标签
+                    path: '/tag',
+                    component: resolve => require(['../components/page/Tag.vue'], resolve),
+                    meta: { title: '文章标签'}
+                },
             ]
         },
         {
