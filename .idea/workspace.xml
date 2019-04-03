@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03449ea5-458c-4aec-9499-23a270921467" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vueadmin.iml" afterPath="$PROJECT_DIR$/.idea/vueadmin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vueadmin/.idea/workspace.xml" afterPath="$PROJECT_DIR$/vueadmin/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vueadmin/src/components/page/Article.vue" afterPath="$PROJECT_DIR$/vueadmin/src/components/page/Article.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vueadmin/src/components/page/Content.vue" afterPath="$PROJECT_DIR$/vueadmin/src/components/page/Content.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vueadmin/src/components/page/Tag.vue" afterPath="$PROJECT_DIR$/vueadmin/src/components/page/Tag.vue" />
-    </list>
+    <list default="true" id="03449ea5-458c-4aec-9499-23a270921467" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/../yiiserver/basic/models/MongodbModel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#29#37#0#PHP" expanded="true" />
               </folding>
@@ -320,12 +313,12 @@
       <workItem from="1554198599563" duration="1798000" />
       <workItem from="1554200661374" duration="280000" />
       <workItem from="1554256158277" duration="2807000" />
-      <workItem from="1554274061624" duration="9131000" />
+      <workItem from="1554274061624" duration="9719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21179000" />
+    <option name="totallyTimeSpent" value="21767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -796,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/../yiiserver/basic/models/MongodbModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#29#37#0#PHP" expanded="true" />
           </folding>
