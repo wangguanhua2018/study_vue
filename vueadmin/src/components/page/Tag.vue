@@ -173,7 +173,7 @@
             // 确定删除
             deleteRow(){
                 this.$axios.delete(this.GLOBAL.serverSrc + '/tags/delete', {data:{
-                    id:this.tag_id
+                    _id:this.tag_id
                 }}).then((response) => {
                     if (response.data.success && response.data.code == 0) {
                         this.delVisible = false;

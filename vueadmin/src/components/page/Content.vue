@@ -7,7 +7,7 @@
                 </el-form-item>
                 <el-form-item label="分类:">
                     <el-select v-model="form.type" placeholder="请选择类" style="width:100%">
-                        <!--<el-option v-for="item in roleData" :label="item.description " :value="item.name" :key="item.name"></el-option>-->
+                        <el-option v-for="item in tagData" :label="item.name" :value="item.name" :key="item.name"></el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item label="描述:">
@@ -42,11 +42,14 @@
                     title: '',
                     type:'',
                     intro:'',
-                }
+                    description:'',
+                },
+                tagData:[],
             }
         },
         components: {quillEditor, quillRedefine},
         created () {
+            this.getTagData();
             this.editorOption = quillRedefine(
                 {
                     // 图片上传的设置
@@ -89,8 +92,38 @@
         },
         methods:{
             submit(){
-                console.log(this.form.intro);
-            }
+                var params = {
+                    category_name: this.form.type,
+                    content: this.form.intro,
+                    title: this.form.title,
+                    describe: this.form.description,
+                };
+
+                this.$axios.post(this.GLOBAL.serverSrc + '/articles', params).then((response) => {
+                    if (response.data.success && response.data.code == 0) {
+                        this.$message.success(response.data.message);
+                        this.$router.push('/article');
+                        return;
+                    }
+                    this.$message.error(response.data.message);
+                }).catch(function (error) {
+                    this.$message.error('error request');
+                });
+            },
+            getTagData() {
+                this.$axios.get(this.GLOBAL.serverSrc + "/tags", {params:{
+                    limit: 100,
+                    page: 1
+                }}).then((response) => {
+                    if (response.data.success && response.data.code == 0) {
+                        this.tagData = response.data.data.list;
+                        return;
+                    }
+                    this.$message.error(response.data.message);
+                }).catch(function (error) {
+                    this.$message.error('error request');
+                });
+            },
         }
     }
 </script>
